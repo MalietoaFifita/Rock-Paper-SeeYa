@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Litia,;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#titleHeader {
+    text-align: center;
+    font-size: 2.6rem; /* Bigger font size */
+    margin: 20px 0;
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    background: linear-gradient(45deg, #ff6b6b, #ffa94d); /* Vibrant gradient (orange-red) */
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Fit the background to the text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Limit the width for larger screens */
+    padding: 20px;
+}
+
+/* Player and Computer Sections */
+.players-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.players {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.players img {
+    max-width: 100px; /* Limit the size of the player/computer choice images */
+    height: auto;
+}
+
+/* Result Section */
+#resultDiv {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons Section */
+.buttons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.choiceBtn {
+    flex: 1;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.choiceBtn img {
+    max-width: 80px; /* Limit the size of the button images */
+    height: auto;
+}
+
+.choiceBtn img {
+    pointer-events: none; /* Ignore clicks on the image */
+}
+
+/* Win Counter */
+#winCounter {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Ensure all images in the game have the same size */
+.players img,
+.choiceBtn img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* Scale the image to fit within the dimensions */
+}
